@@ -22,7 +22,7 @@ export default function Index() {
         e.preventDefault()
 
         try {
-            const res = await fetch(`${API_URL}/api/signin`, {
+            const res = await fetch(`${API_URL}/api/users/signin`, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ email, password }),
